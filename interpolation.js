@@ -2,6 +2,11 @@ function like(thing) {
   return 'I like ' + thing;
 }
 
-const sentence = `<p>` + like(`apples`) + `.</p>`;
+// template literal
+const love = (thing) => `I love ${thing}`;
 
-//document.querySelector('.interpolation').innerHTML = sentence;
+
+
+const sentence = `<p> ${like('apples')}, but ${love('oranges')} .</p>`;
+
+document.querySelector('.interpolation').innerHTML = sentence;
